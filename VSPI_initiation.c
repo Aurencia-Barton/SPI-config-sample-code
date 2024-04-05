@@ -16,7 +16,7 @@ void app_main(void)
 {
     spi_device_interface_config_t devcfg = {
         .clock_speed_hz = 1000000, // Clock out at 1 MHz with 1 us cycle
-        .mode = 0,                 // SPI mode 0 - the clock signal starts with a low signal
+        .mode = 3,                 // SPI mode 0 - the clock signal starts with a low signal
         .spics_io_num = 15,        // CS pin
         .queue_size = 7,           // Queue 7 transactions at a time
     };
