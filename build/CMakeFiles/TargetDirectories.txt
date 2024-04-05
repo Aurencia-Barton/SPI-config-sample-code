@@ -639,3 +639,10 @@
 /Users/aurenciabarton/esp/FreeRTOS-ESP-IDF-SPI/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 /Users/aurenciabarton/esp/FreeRTOS-ESP-IDF-SPI/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 /Users/aurenciabarton/esp/FreeRTOS-ESP-IDF-SPI/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+/Users/aurenciabarton/esp/FreeRTOS-ESP-IDF-SPI/build/esp-idf/main/CMakeFiles/__idf_main.dir
+/Users/aurenciabarton/esp/FreeRTOS-ESP-IDF-SPI/build/esp-idf/main/CMakeFiles/edit_cache.dir
+/Users/aurenciabarton/esp/FreeRTOS-ESP-IDF-SPI/build/esp-idf/main/CMakeFiles/rebuild_cache.dir
+/Users/aurenciabarton/esp/FreeRTOS-ESP-IDF-SPI/build/esp-idf/main/CMakeFiles/list_install_components.dir
+/Users/aurenciabarton/esp/FreeRTOS-ESP-IDF-SPI/build/esp-idf/main/CMakeFiles/install.dir
+/Users/aurenciabarton/esp/FreeRTOS-ESP-IDF-SPI/build/esp-idf/main/CMakeFiles/install/local.dir
+/Users/aurenciabarton/esp/FreeRTOS-ESP-IDF-SPI/build/esp-idf/main/CMakeFiles/install/strip.dir

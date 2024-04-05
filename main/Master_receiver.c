@@ -53,13 +53,13 @@ void app_main(void)
         .dummy_bits = 0,
         .clock_speed_hz = 5000000,
         .duty_cycle_pos = 128, // 50% duty cycle
-        .mode = 0,
+        .mode = 3,
         .spics_io_num = GPIO_CS,
         .cs_ena_posttrans = 3, // Keep the CS low 3 cycles after transaction
         .queue_size = 3};
 
-    spi_bus_initialize(HSPI_HOST, &buscfg, SPI_DMA_CH_AUTO);
-    spi_bus_add_device(HSPI_HOST, &devcfg, &handle);
+    spi_bus_initialize(SPI3_HOST, &buscfg, SPI_DMA_CH_AUTO);
+    spi_bus_add_device(SPI3_HOST, &devcfg, &handle);
 
     char recvbuf[129] = "";
     memset(recvbuf, 0, 33);

@@ -52,7 +52,7 @@ void app_main(void)
     };
 
     //Initialize SPI slave interface
-    spi_slave_initialize(HSPI_HOST, &buscfg, &slvcfg, SPI_DMA_CH_AUTO);
+    spi_slave_initialize(SPI3_HOST, &buscfg, &slvcfg, SPI_DMA_CH_AUTO);
 
     char recvbuf[129]="";
     memset(recvbuf, 0, 33);
@@ -63,7 +63,7 @@ void app_main(void)
     while(1) {
         t.length=128*8;
         t.rx_buffer=recvbuf;
-        spi_slave_transmit(HSPI_HOST, &t, portMAX_DELAY);
+        spi_slave_transmit(SPI3_HOST, &t, portMAX_DELAY);
         printf("Received: %s\n", recvbuf);
     }
 }

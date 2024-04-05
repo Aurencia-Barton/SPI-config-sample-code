@@ -32,11 +32,11 @@ void app_main(void)
     };
 
     // Initialize the SPI
-    spi_bus_initialize(VSPI_HOST, &buscfg, 1);
+    spi_bus_initialize(SPI3_HOST, &buscfg, 1);
 
     // Define SPI handle
     spi_device_handle_t spi;
-    spi_bus_add_device(VSPI_HOST, &devcfg, &spi);
+    spi_bus_add_device(SPI3_HOST, &devcfg, &spi);
  
     // SPI transaction structure
     spi_transaction_t trans;

@@ -54,7 +54,7 @@ void app_main(void)
     };
 
     // Initialize SPI slave interface
-    spi_slave_initialize(HSPI_HOST, &buscfg, &slvcfg, SPI_DMA_CH_AUTO);
+    spi_slave_initialize(SPI3_HOST, &buscfg, &slvcfg, SPI_DMA_CH_AUTO);
 
     // SPI variables 
     char sendbuf[128] = {0};
@@ -67,7 +67,7 @@ void app_main(void)
         snprintf(sendbuf, sizeof(sendbuf), "Sent by slave - %d", i);
         t.length = sizeof(sendbuf) * 8;
         t.tx_buffer = sendbuf;
-        spi_slave_transmit(HSPI_HOST, &t, portMAX_DELAY);
+        spi_slave_transmit(SPI3_HOST, &t, portMAX_DELAY);
         printf("Transmitted: %s\n", sendbuf);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
         i++;

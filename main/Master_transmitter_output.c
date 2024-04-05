@@ -62,8 +62,8 @@ void app_main(void)
 
     spi_transaction_t t;
     memset(&t, 0, sizeof(t));
-    spi_bus_initialize(HSPI_HOST, &buscfg, SPI_DMA_CH_AUTO);
-    spi_bus_add_device(HSPI_HOST, &devcfg, &handle);
+    spi_bus_initialize(SPI3_HOST, &buscfg, SPI_DMA_CH_AUTO);
+    spi_bus_add_device(SPI3_HOST, &devcfg, &handle);
 
     printf("Master output:\n");
     while (1)
