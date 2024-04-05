@@ -26,10 +26,10 @@
 #include "driver/gpio.h"
 
 // Pins in use
-#define GPIO_MOSI 12
+#define GPIO_MOSI 11
 #define GPIO_MISO 13
-#define GPIO_SCLK 15
-#define GPIO_CS 14
+#define GPIO_SCLK 18
+#define GPIO_CS 10
 
 //Main application
 void app_main(void)
